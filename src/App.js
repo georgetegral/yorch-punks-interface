@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Home from './views/home/index.js';
+import Home from './views/home';
+import Punks from './views/punks';
 import Web3 from "web3";
 import MainLayout from "./layouts/main";
 
@@ -22,6 +23,7 @@ function App() {
     <MainLayout>
       <Routes>
         <Route path="/" element={<Home />}/>
+        <Route path="/punks" element={<Punks />}/>
       </Routes>
     </MainLayout>
     </>
