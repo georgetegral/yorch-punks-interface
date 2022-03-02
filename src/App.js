@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Home from './views/home';
 import Punks from './views/punks';
-import Web3 from "web3";
+import Punk from './views/punk';
 import MainLayout from "./layouts/main";
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/punks" element={<Punks />}/>
+        <Route path="/punks/:tokenId" element={<Punk />}/>
       </Routes>
     </MainLayout>
     </>
