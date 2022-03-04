@@ -135,7 +135,7 @@ import {
               _hover={{ bg: "green.500" }}
               disabled={!platziPunks}
               onClick={mint}
-              isLoaded={isMinting}
+              isLoading={isMinting}
             >
               Obtén tu punk
             </Button>
